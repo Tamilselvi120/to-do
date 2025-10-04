@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Tasks</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>My Tasks</h1>
+      <p>Stay organized and productive</p>
+    </header>
+
+    <!-- Sidebar for Lists -->
+    <div class="sidebar">
+      <h3>Lists</h3>
+      <ul id="lists">
+        <li class="list active">Personal</li>
+        <li class="list">Work</li>
+      </ul>
+      <button id="new-list-btn">+ Add List</button>
+    </div>
+
+    <!-- Main Task Section -->
+    <div class="main">
+      <div class="task-input">
+        <input type="text" id="task-input" placeholder="Add a new task...">
+        <input type="date" id="task-date">
+        <input type="time" id="task-time">
+        <button id="add-task-btn">+ Add</button>
+      </div>
+      <h3 id="current-list-title">Personal</h3>
+      <ul id="task-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
